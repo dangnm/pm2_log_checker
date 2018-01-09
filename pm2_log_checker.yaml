@@ -1,0 +1,4 @@
+apps:
+  - script : node
+    args : ["pm2_log_checker.js"]
+    name : 'PM2_CHECKER_YOUR_ID'

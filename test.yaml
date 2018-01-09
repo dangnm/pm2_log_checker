@@ -1,0 +1,4 @@
+apps:
+  - script : node
+    args : ["test.js"]
+    name : 'PM2_PROCESS_TEST'

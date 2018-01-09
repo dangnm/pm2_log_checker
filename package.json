@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/dangnm/pm2_log_checker#readme",
   "dependencies": {
-    "node-cron": "^1.2.1"
+    "node-cron": "^1.2.1",
+    "nodemailer": "^4.4.1",
+    "store": "^2.0.12"
   }
 }
