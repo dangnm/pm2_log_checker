@@ -37,7 +37,7 @@ store.set(old_log_result, "");
 store.set(log_result, "");
 
 cron.schedule('0 */2 * * * *', function(){
-  const process = child_process.spawn('pm2', ['logs', '--nostream', '--lines', '1', app_name]);
+  const process = child_process.spawn('pm2', ['logs', '--nostream', '--lines', '10', app_name]);
   process.on('exit', () => {
     if (store.get(log_result) === store.get(old_log_result)) {
       child_process.spawn('pm2', ['restart', app_name]);
